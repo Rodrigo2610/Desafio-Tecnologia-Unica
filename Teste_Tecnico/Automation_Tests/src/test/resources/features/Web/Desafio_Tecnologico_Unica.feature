@@ -1,7 +1,7 @@
 @desafiotecnico
 Feature: Desafio Tecnologico Única - automação Web
 
-  Scenario: Acessar Portal do Submarino
+  Scenario: Acessar Portal do Magazine Luiza
     Given que eu acesse o portal do "http://www.magazineluiza.com.br"
     Then devera ser validado o titulo "Magazine Luiza | Pra você é Magalu!"
 
