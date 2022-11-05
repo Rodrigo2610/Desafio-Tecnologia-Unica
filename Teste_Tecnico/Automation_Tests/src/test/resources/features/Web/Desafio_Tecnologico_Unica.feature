@@ -1,6 +1,5 @@
 @desafiotecnico
 Feature: Desafio Tecnologico Única - automação Web
-  Validar se as funcionalidades de autorização estão em correto funcionamento
 
   Scenario: Acessar Portal do Submarino
     Given que eu acesse o portal do "http://www.magazineluiza.com.br"
