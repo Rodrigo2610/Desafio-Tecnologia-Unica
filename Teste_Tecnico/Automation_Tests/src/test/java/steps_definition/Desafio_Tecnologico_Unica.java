@@ -54,7 +54,6 @@ public class Desafio_Tecnologico_Unica extends Testrunner implements TestData {
 	public void o_devera_ser_retornado_com_sucesso(String Produto) throws Throwable {
 		
 		Thread.sleep(2000);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text()'"+Produto+"')]")));
 		assertEquals(Produto,Navegador.driver.findElement(By.xpath("//*[contains(text(), '"+Produto+"')]")).getText());
 	    
 	}
