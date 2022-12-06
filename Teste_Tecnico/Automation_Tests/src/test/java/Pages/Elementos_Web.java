@@ -34,7 +34,7 @@ public class Elementos_Web {
     
     public static WebElement Produto (WebDriver driver){
    	  
- 	WebDriverWait wait = new WebDriverWait(driver, 30);
+ 	WebDriverWait wait = new WebDriverWait(driver, 60);
  	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Autorizar Selecionadas')]")));
  	
  	 element = driver.findElement(By.xpath("//*[contains(text(),'Autorizar Selecionadas')]"));  
@@ -43,7 +43,7 @@ public class Elementos_Web {
     
     public static WebElement Btn_Confirmar (WebDriver driver){
      	  
- 	WebDriverWait wait = new WebDriverWait(driver, 30);
+ 	WebDriverWait wait = new WebDriverWait(driver, 60);
  	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),' Confirmar ')]")));
  	
  	 element = driver.findElement(By.xpath("//*[contains(text(),' Confirmar ')]"));  
@@ -52,7 +52,7 @@ public class Elementos_Web {
     
     public static WebElement Detalhes_produto (WebDriver driver){
    	  
- 	WebDriverWait wait = new WebDriverWait(driver, 30);
+ 	WebDriverWait wait = new WebDriverWait(driver, 60);
  	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#__next > div > main > section:nth-child(4) > div.sc-eDvSVe.fldrdv > h1")));
  	
  	 element = driver.findElement(By.cssSelector("#__next > div > main > section:nth-child(4) > div.sc-eDvSVe.fldrdv > h1"));  
@@ -61,7 +61,7 @@ public class Elementos_Web {
     
     public static WebElement Btn_comprar (WebDriver driver){
      	  
- 	WebDriverWait wait = new WebDriverWait(driver, 30);
+ 	WebDriverWait wait = new WebDriverWait(driver, 60);
  	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Comprar Agora')]")));
  	
  	 element = driver.findElement(By.xpath("//*[contains(text(),'Comprar Agora')]"));  
@@ -70,7 +70,7 @@ public class Elementos_Web {
     
     public static WebElement Btn_ir_para_sacola (WebDriver driver){
    	  
- 	WebDriverWait wait = new WebDriverWait(driver, 30);
+ 	WebDriverWait wait = new WebDriverWait(driver, 60);
  	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'Ir para sacola')]")));
  	
  	 element = driver.findElement(By.xpath("//*[contains(text(),'Ir para sacola')]"));  
@@ -78,7 +78,7 @@ public class Elementos_Web {
 }
     public static WebElement Btn_entendi_e_fechar (WebDriver driver){
      	  
- 	WebDriverWait wait = new WebDriverWait(driver, 30);
+ 	WebDriverWait wait = new WebDriverWait(driver, 60);
  	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"__next\"]/div/main/div[1]/div[2]/button")));
  	
  	 element = driver.findElement(By.xpath("//*[@id=\"__next\"]/div/main/div[1]/div[2]/button"));  
@@ -88,9 +88,9 @@ public class Elementos_Web {
     public static WebElement home (WebDriver driver){
    	  
  	WebDriverWait wait = new WebDriverWait(driver, 120);
- 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[1]/div/div[1]/div/div[1]/div/a")));
+ 	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div/div/div/div/div/div/a")));
  	
- 	 element = driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[1]/div/a"));  
+ 	 element = driver.findElement(By.xpath("/html/body/div/div/div/div/div/div/a"));  
         return element;
 }
     

@@ -103,11 +103,11 @@ public class Desafio_Tecnologico_Unica extends Testrunner implements TestData {
 	public void abrir_a_pagina_do_carrinho() throws Throwable {
 		
 		WebDriverWait wait = new WebDriverWait(Navegador.driver, 250);
-	 	wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("/html/body/div[1]/div/div[4]/svg")));
+	 	wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("LoadingBackground")));
 		
-	 	Thread.sleep(1000);
+	 	Thread.sleep(9000);
 		Elementos_Web.home(Navegador.driver).click();
-		Thread.sleep(2000);
+//		Thread.sleep(2000);
 		Navegador.driver.get("https://sacola.magazineluiza.com.br/#/");
 	    
 	}

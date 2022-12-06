@@ -11,8 +11,8 @@ Feature: Desafio Tecnologico Única - automação Web
     Then o "<produto>" devera ser retornado com sucesso
 
     Examples: 
-      | produto                                                    |
-      | Apple iPhone 14 Pro 256GB Roxo-profundo 6,1” 48MP - iOS 5G |
+      | produto                                                      |
+      | iPhone 12 Apple 64GB (PRODUCT)RED 6,1” - Câm. Dupla 12MP iOS |
 
   Scenario Outline: Escolher produto
     Given eu clique no "<produto>" escolhido
@@ -20,8 +20,8 @@ Feature: Desafio Tecnologico Única - automação Web
     Then devera ser exibido os detalhes do "<produto>" escolhido
 
     Examples: 
-      | produto                                                    |
-      | Apple iPhone 14 Pro 256GB Roxo-profundo 6,1” 48MP - iOS 5G |
+      | produto                                                      |
+      | iPhone 12 Apple 64GB (PRODUCT)RED 6,1” - Câm. Dupla 12MP iOS |
 
   Scenario Outline: Adicionar ao carrinho
     Given eu adicione o "<produto>" ao carrinho
@@ -29,5 +29,5 @@ Feature: Desafio Tecnologico Única - automação Web
     Then devera ser exibido o "<produto>" adicionado
 
     Examples: 
-      | produto                                                           |
-      | Apple iPhone 14 Pro 256GB Roxo-profundo 6,1” 48MP - iOS 5G - Roxo |
+      | produto                                                                     |
+      | iPhone 12 Apple 64GB (PRODUCT)RED 6,1” - Câm. Dupla 12MP iOS - Product, Red |
